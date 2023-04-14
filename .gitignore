@@ -16,6 +16,9 @@ dist/
 # Log files
 *.log
 
+# Bat files
+*.bat
+
 # Package files
 *.jar
 
@@ -47,4 +50,3 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-
