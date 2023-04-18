@@ -84,6 +84,7 @@ class VecFormat:
             for key, value in vec.items():
                 value = "{0:#0{1}X}".format(value, 6)[2:]
                 if key.startswith('m'):
+                    print("[{}][MPO] {}: {}".format(mode, key, value))
                     key = key[-4:]  # remove subffix of duplicate address
                 output_file.write("{} {}\n".format(key, value))
 
