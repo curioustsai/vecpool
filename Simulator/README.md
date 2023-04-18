@@ -1,6 +1,9 @@
 ## Download simulator
 Please download SamSoft simulator.exe from [SharePoint](https://fortemediainc.sharepoint.com/sites/PCNB/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FPCNB%2FShared%20Documents%2FSimulator&viewid=aef52aae%2D12b8%2D469a%2Db96c%2De96b06ecf616)
 
+- [SAMSoftV930_Simulator_v930_93981585_35978](https://fortemediainc.sharepoint.com/:u:/s/PCNB/EeljaVJ1dr5LjfUM7eX6LDEBdCGnVLZvVOxBp_ebKVW3eg?e=Js3pBB)
+- [SAMSoftV920_Simulator_v920_v92_98_10_6x_win11](https://fortemediainc.sharepoint.com/:u:/s/PCNB/EQeGXSLyTBxLmtkexCzRhfkBgap2UjLl-Vha8s5UVvjlHQ?e=oCEPuX)
+
 ## Run simulation
 1. Open "command window".
 2. Change path by entering "cd C:\simulator" to this folder.
