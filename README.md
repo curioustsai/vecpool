@@ -9,9 +9,8 @@ A vec pool for keep track of all PCNB vec for all projects
 - Pool of project *.vec files
 ```
 ├───HP
-│   ├───HP2023
-│   │   ├───CPU
-│   │   └───GNA
+│   ├───HP2023_CPU
+│   ├───HP2023_GNA
 │   └───HP2024
 │       └───reference_930
 └───Lenovo
