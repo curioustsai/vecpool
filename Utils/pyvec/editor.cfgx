@@ -1,0 +1,87 @@
+# Actions for edit vec file
+# Use '#' to comment out
+# Follow the format as following
+
+# SSID: vec filanem e.g. SAMSfppch_103C873D, or package name: HP_920. Asterisk mark '*' means all vec files.
+# Mode range from 0 ~ 27. Asterisk * stands for all modes
+# Key: hex number
+# Value: hex number
+# SSID, Mode, Key, Value
+# -------------------------------------
+# SAMSfppch_103C873D, *, 1234, 1234
+# HP_920, 1, 1234, 4321
+
+# SSID: vec filanem e.g. SAMSfppch_103C873D, or package name: HP_920. Asterisk mark '*' means all vec files.
+# Mode range from 0 ~ 27. Asterisk * stands for all modes
+# Key: hex number
+# Act: [set, clear, toggle]
+# Bitoffset: 0 ~ 15
+# -------------------------------------
+# SAMSfppch_103C873D, 2, 1234, set, 7
+# SAMSfppch_103C873D, 2, 1234, clear, 9
+# SAMSfppch_103C873D, *, 4321, set, 15
+# HP_920GNA, *, 00FE, set, 12
+# *, *, 4321, set, 15
+SAMSfpa_103C8B7A, *, 00FE, set, 12
+SAMSfpa_103C8B7B, *, 00FE, set, 12
+SAMSfpa_103C8B7D, *, 00FE, set, 12
+SAMSfpa_103C8B7E, *, 00FE, set, 12
+SAMSfpa_103C8B81, *, 00FE, set, 12
+SAMSfpa_103C8B82, *, 00FE, set, 12
+SAMSfpa_103C8B84, *, 00FE, set, 12
+SAMSfpa_103C8B85, *, 00FE, set, 12
+SAMSfpa_103C8B87, *, 00FE, set, 12
+SAMSfpa_103C8B8A, *, 00FE, set, 12
+SAMSfpa_103C8B8B, *, 00FE, set, 12
+SAMSfpa_103C8B8D, *, 00FE, set, 12
+SAMSfpa_103C8B8E, *, 00FE, set, 12
+SAMSfpa_103C8BF0, *, 00FE, set, 12
+SAMSfpa_103C8BF1, *, 00FE, set, 12
+
+SAMSfppch_103C8B7B, *, 00FE, set, 12
+SAMSfppch_103C8B7A, *, 00FE, set, 12
+SAMSfppch_103C8B7D, *, 00FE, set, 12
+SAMSfppch_103C8B7E, *, 00FE, set, 12
+SAMSfppch_103C8B81, *, 00FE, set, 12
+SAMSfppch_103C8B82, *, 00FE, set, 12
+SAMSfppch_103C8B84, *, 00FE, set, 12
+SAMSfppch_103C8B85, *, 00FE, set, 12
+SAMSfppch_103C8B87, *, 00FE, set, 12
+SAMSfppch_103C8B8A, *, 00FE, set, 12
+SAMSfppch_103C8B8B, *, 00FE, set, 12
+SAMSfppch_103C8B8D, *, 00FE, set, 12
+SAMSfppch_103C8B8E, *, 00FE, set, 12
+SAMSfppch_103C8BF0, *, 00FE, set, 12
+SAMSfppch_103C8BF1, *, 00FE, set, 12
+
+SAMSfpaspk_103C8B7B, *, 40FE, set, 12
+SAMSfpaspk_103C8B7A, *, 40FE, set, 12
+SAMSfpaspk_103C8B7D, *, 40FE, set, 12
+SAMSfpaspk_103C8B7E, *, 40FE, set, 12
+SAMSfpaspk_103C8B81, *, 40FE, set, 12
+SAMSfpaspk_103C8B82, *, 40FE, set, 12
+SAMSfpaspk_103C8B84, *, 40FE, set, 12
+SAMSfpaspk_103C8B85, *, 40FE, set, 12
+SAMSfpaspk_103C8B87, *, 40FE, set, 12
+SAMSfpaspk_103C8B8A, *, 40FE, set, 12
+SAMSfpaspk_103C8B8B, *, 40FE, set, 12
+SAMSfpaspk_103C8B8D, *, 40FE, set, 12
+SAMSfpaspk_103C8B8E, *, 40FE, set, 12
+SAMSfpaspk_103C8BF0, *, 40FE, set, 12
+SAMSfpaspk_103C8BF1, *, 40FE, set, 12
+
+SAMSfpaspk_103C8B7B, *, 40FE, set, 14
+SAMSfpaspk_103C8B7A, *, 40FE, set, 14
+SAMSfpaspk_103C8B7D, *, 40FE, set, 14
+SAMSfpaspk_103C8B7E, *, 40FE, set, 14
+SAMSfpaspk_103C8B81, *, 40FE, set, 14
+SAMSfpaspk_103C8B82, *, 40FE, set, 14
+SAMSfpaspk_103C8B84, *, 40FE, set, 14
+SAMSfpaspk_103C8B85, *, 40FE, set, 14
+SAMSfpaspk_103C8B87, *, 40FE, set, 14
+SAMSfpaspk_103C8B8A, *, 40FE, set, 14
+SAMSfpaspk_103C8B8B, *, 40FE, set, 14
+SAMSfpaspk_103C8B8D, *, 40FE, set, 14
+SAMSfpaspk_103C8B8E, *, 40FE, set, 14
+SAMSfpaspk_103C8BF0, *, 40FE, set, 14
+SAMSfpaspk_103C8BF1, *, 40FE, set, 14

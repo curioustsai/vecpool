@@ -7,10 +7,24 @@ version = "1.0.0"
 
 
 class VecEditor(VecFormat):
-    def __init__(self):
+    def __init__(self, workdir, packages, input, output, config):
         VecFormat.__init__(self)
+        self.input = input
+        self.output = output
+        self.config = config
         self.actions = []
-        self.package_list = ["HP_890", "HP_920", "HP_920GNA", "HP_2023", "HP_2023GNA"]
+        self.workdir = workdir
+        self.package_list = packages
+
+    def run(self):
+        if self.config.endswith("cfg"):
+            self.read(self.input)
+            self.apply_cfg(self.config)
+            self.write(self.output)
+
+        elif self.config.endswith("cfgx"):
+            # inplace overwrite
+            self.apply_cfgx(self.config)
 
     def parse_cfg(self, cfg_path):
         if not cfg_path.endswith(".cfg"):
@@ -125,32 +139,31 @@ class VecEditor(VecFormat):
         if not self.parse_cfgx(cfg_path):
             return False
 
-        d2v_folder = "d2v"
         vec_list = []
         for act in self.actions:
             ssid = act["ssid"]
             if ssid in self.package_list:
                 pack = ssid
                 ssid = "*.vec"
-                pattern = os.path.join(d2v_folder, pack, ssid)
+                pattern = os.path.join(self.workdir, pack, ssid)
             elif ssid == "*":
                 pack = "*"
                 ssid = "*.vec"
-                pattern = os.path.join(d2v_folder, pack, ssid)
+                pattern = os.path.join(self.workdir, pack, ssid)
             elif '\\' in ssid:
                 ssid = ssid + ".vec"
-                pattern = os.path.join(d2v_folder, ssid)
+                pattern = os.path.join(self.workdir, ssid)
             else:
                 pack = "*"
                 ssid = ssid + ".vec"
-                pattern = os.path.join(d2v_folder, pack, ssid)
+                pattern = os.path.join(self.workdir, pack, ssid)
 
             vec_list = glob(pattern)
             if len(vec_list) == 0:
                 print("cannot match any file")
                 continue
 
-            del(act["ssid"])
+            del (act["ssid"])
 
             for vec_file in vec_list:
                 self.read(vec_file)
@@ -164,18 +177,24 @@ if __name__ == "__main__":
     argpars.add_argument("--input", "-i", default="", type=str)
     argpars.add_argument("--output", "-o", default="", type=str)
     argpars.add_argument("--config", "-c", required=True, help="*.cfg or *.cfgx")
+    argpars.add_argument("--customer", default="hp", choices=['hp', 'lenovo'],
+                         help="vec root directory of your project")
     parse_value = argpars.parse_args()
 
-    input_path = parse_value.input
-    output_path = parse_value.output
+    input = parse_value.input
+    output = parse_value.output
     config = parse_value.config
+    customer = parse_value.customer
+    # Customer except HP are NIY
+    rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
 
-    vecEditor = VecEditor()
-    if config.endswith("cfg"):
-        vecEditor.read(input_path)
-        vecEditor.apply_cfg(config)
-        vecEditor.write(output_path)
+    workdir = os.path.join(rootdir, 'Parameters', 'HP')
+    packages = ["HP_890", "HP_920", "HP_920GNA", "HP_2023", "HP_2023GNA"]
 
-    elif config.endswith("cfgx"):
-        # inplace overwrite
-        vecEditor.apply_cfgx(config)
+    # Not Implement Yet (NIY)
+    # if parse_value.customer == "hp":
+    # elif parse_value.customer == "lenovo":
+    #     workdir = os.path.join(rootdir, 'Parameters', 'Lenovo')
+
+    editor = VecEditor(workdir, packages, input, output, config)
+    editor.run()
