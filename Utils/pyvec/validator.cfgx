@@ -17,21 +17,33 @@
 # Act: [enable, disable]
 # Bitoffset: 0 ~ 15
 # -------------------------------------
-# SAMSfppch_103C873D, 2, 1234, set, 7
-# SAMSfppch_103C873D, 2, 1234, clear, 9
-# SAMSfppch_103C873D, *, 4321, set, 15
-# HP_920GNA, *, 00FE, set, 12
+# SAMSfppch_103C873D, 2, 1234, enable, 7
+# SAMSfppch_103C873D, 2, 1234, disable, 9
+# SAMSfppch_103C873D, *, 4321, enable, 15
+# HP_920GNA, *, 00FE, enable, 12
+# HP_2023GNA\\SAMSfpa_*, *, 1234, enable, 12
+# HP_2023GNA\\SAMSfppch_**, *, 1234, enable, 12
 # *, *, 4321, set, 15
 
-#
 # Mode 1
 # Gain Distribution (Mic volume bar, post gain)
-HP_2023GNA\\SAMSfpa_*, 1, 0149, 00AC
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 0149, 002C
 # EFX gain, 10 dB
-HP_2023GNA\\SAMSfpa_*, 1, 014E, 000A
-HP_2023GNA\\SAMSfpa_*, 1, 2000, 0009
-HP_2023GNA\\SAMSfpa_*, 1, 2001, 081F
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 014E, 000A
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2000, 0009
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2001, 081F
 # disable 3Quest CHECK
-HP_2023GNA\\SAMSfpa_*, 1, 21E5, disable, 15
-HP_2023GNA\\SAMSfpa_*, 1, 21E5, enable, 15
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 21E5, disable, 15
+
+# Mode 3
+# Gain Distribution (Mic volume bar, post gain)
+HP_2023GNA\\SAMSfpa_103C8BF0, 3, 0149, 002C
+# EFX gain, 10 dB
+HP_2023GNA\\SAMSfpa_103C8BF0, 3, 014E, 000A
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2000, 0009
+# disable FFP
+HP_2023GNA\\SAMSfpa_103C8BF0, 3, 2001, disable, 4
+HP_2023GNA\\SAMSfpa_103C8BF0, 3, 2001, enable, 9
+# disable 3Quest CHECK
+HP_2023GNA\\SAMSfpa_103C8BF0, 1, 21E5, disable, 15
 
