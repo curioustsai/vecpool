@@ -35,3 +35,8 @@ SAMSoftV920_Simulator_VS2012.exe -c2 -i cap_xxxxxx.wav -r ref_xxxxxx.wav -o lout
 
 ex : 2ch, 16K32Bits
 SAMSoftV920_Simulator_VS2012.exe -c2 -i cap_xxxxxx.wav -r ref_xxxxxx.wav -o lout_xxxxxx.wav -v mode3.vec -S 1
+
+## IO wave format
+- Use libsndfile instead of WavePCM
+- 32-bit floating
+- Sample rate file is the same as processing sample rate

@@ -1,5 +1,4 @@
 from editor import VecEditor
-from glob import glob
 import os
 import argparse
 
@@ -11,6 +10,7 @@ class Validator(VecEditor):
         super().__init__(workdir, packages, input, output, config)
 
     def execute_action(self, act):
+        status = True
         if len(act) == 3:
             if act["mode"] == "*":
                 mode_list = self.data.keys()
@@ -22,6 +22,7 @@ class Validator(VecEditor):
                 value = act["value"]
                 if self.data[mode][key] != int(value, 16):
                     print("Eror: [{}] key: {}, {:X} != {}".format(mode, key, self.data[mode][key], value))
+                    status = False
 
         elif len(act) == 4:
             if act["mode"] == "*":
@@ -40,48 +41,27 @@ class Validator(VecEditor):
                     if action.lower() == 'enable':
                         value = value & (1 << bitoffset)
                         if (value != 1):
-                            print("Error: [{}] key: {}, should be enable".format(mode, key))
+                            print("Error: [{}] key: {}, bit: {} should be enabled".format(mode, key, bitoffset))
+                            status = False
                     elif action.lower() == 'disable':
                         value = value & (1 << bitoffset)
                         if (value != 0):
-                            print("Error: [{}] key: {}, should be disable".format(mode, key))
+                            print("Error: [{}] key: {}, bit: {} should be disabled".format(mode, key, bitoffset))
+                            status = False
                 else:
                     print("Error: {} {} doesn't specify".format(mode, key))
+                    status = False
+        return status
 
-    def apply_cfgx(self, cfg_path):
-        if not self.parse_cfgx(cfg_path):
-            return False
+    def run(self):
+        if self.config.endswith("cfg"):
+            self.read(self.input)
+            self.apply_cfg(self.config)
+            self.write(self.output)
 
-        vec_list = []
-        for act in self.actions:
-            ssid = act["ssid"]
-            if ssid in self.package_list:
-                pack = ssid
-                ssid = "*.vec"
-                pattern = os.path.join(self.workdir, pack, ssid)
-            elif ssid == "*":
-                pack = "*"
-                ssid = "*.vec"
-                pattern = os.path.join(self.workdir, pack, ssid)
-            elif '\\' in ssid:
-                ssid = ssid + ".vec"
-                pattern = os.path.join(self.workdir, ssid)
-            else:
-                pack = "*"
-                ssid = ssid + ".vec"
-                pattern = os.path.join(self.workdir, pack, ssid)
-
-            vec_list = glob(pattern)
-            if len(vec_list) == 0:
-                print("cannot match any file")
-                continue
-
-            del (act["ssid"])
-
-            for vec_file in vec_list:
-                print(vec_file)
-                self.read(vec_file)
-                self.execute_action(act)
+        elif self.config.endswith("cfgx"):
+            # inplace overwrite
+            self.apply_cfgx(self.config, False)
 
 
 if __name__ == "__main__":
@@ -101,7 +81,7 @@ if __name__ == "__main__":
     # Customer except HP are NIY
     rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
     workdir = os.path.join(rootdir, 'Parameters', 'HP')
-    packages = ["HP_890", "HP_920", "HP_920GNA", "HP_2023", "HP_2023GNA"]
+    packages = os.listdir(os.path.join(workdir))
 
     # Not Implement Yet (NIY)
     # if parse_value.customer == "hp":

@@ -127,6 +127,7 @@ class VecEditor(VecFormat):
                 else:
                     if action.lower() == 'set' or action.lower() == 'toggle':
                         self.data[mode][key] = (1 << bitoffset)
+        return True
 
     def apply_cfg(self, cfg_path):
         if not self.parse_cfg(cfg_path):
@@ -135,7 +136,7 @@ class VecEditor(VecFormat):
         for act in self.actions:
             self.execute_action(act)
 
-    def apply_cfgx(self, cfg_path):
+    def apply_cfgx(self, cfg_path, write=True):
         if not self.parse_cfgx(cfg_path):
             return False
 
@@ -143,22 +144,39 @@ class VecEditor(VecFormat):
         for act in self.actions:
             ssid = act["ssid"]
             if ssid in self.package_list:
+                # specific package
                 pack = ssid
                 ssid = "*.vec"
                 pattern = os.path.join(self.workdir, pack, ssid)
+                vec_list = glob(pattern)
             elif ssid == "*":
+                # for all vec
                 pack = "*"
                 ssid = "*.vec"
                 pattern = os.path.join(self.workdir, pack, ssid)
-            elif '\\' in ssid:
-                ssid = ssid + ".vec"
-                pattern = os.path.join(self.workdir, ssid)
+                vec_list = glob(pattern)
+            elif '|' in ssid:
+                ss = ssid.strip().split('(')
+                prefix = ss[0]
+                if '\\' in prefix:
+                    pack = prefix.split('\\')[0]
+                    prefix = prefix.split('\\')[1]
+                else:
+                    pack = '*'
+
+                ids = ss[1][:-1].split('|')
+                ids = [prefix + id + ".vec" for id in ids]
+                vec_list = []
+                for id in ids:
+                    pattern = os.path.join(self.workdir, pack, id)
+                    vec_list.extend(glob(pattern, recursive=True))
             else:
+                # specific ssid
                 pack = "*"
                 ssid = ssid + ".vec"
                 pattern = os.path.join(self.workdir, pack, ssid)
+                vec_list = glob(pattern)
 
-            vec_list = glob(pattern)
             if len(vec_list) == 0:
                 print("cannot match any file")
                 continue
@@ -167,8 +185,11 @@ class VecEditor(VecFormat):
 
             for vec_file in vec_list:
                 self.read(vec_file)
-                self.execute_action(act)
-                self.write(vec_file)
+                if self.execute_action(act) is False:
+                    print(vec_file)
+
+                if write:
+                    self.write(vec_file)
 
 
 if __name__ == "__main__":
@@ -189,7 +210,7 @@ if __name__ == "__main__":
     rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
 
     workdir = os.path.join(rootdir, 'Parameters', 'HP')
-    packages = ["HP_890", "HP_920", "HP_920GNA", "HP_2023", "HP_2023GNA"]
+    packages = os.listdir(os.path.join(workdir))
 
     # Not Implement Yet (NIY)
     # if parse_value.customer == "hp":

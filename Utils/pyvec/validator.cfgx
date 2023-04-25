@@ -21,29 +21,61 @@
 # SAMSfppch_103C873D, 2, 1234, disable, 9
 # SAMSfppch_103C873D, *, 4321, enable, 15
 # HP_920GNA, *, 00FE, enable, 12
-# HP_2023GNA\\SAMSfpa_*, *, 1234, enable, 12
-# HP_2023GNA\\SAMSfppch_**, *, 1234, enable, 12
+# SAMSfpa_*, *, 1234, enable, 12
+# SAMSfppch_**, *, 1234, enable, 12
 # *, *, 4321, set, 15
 
-# Mode 1
+################################
+# Intel PCH Mode 1
+################################
+# SSID, Mode, Key, Value
 # Gain Distribution (Mic volume bar, post gain)
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 0149, 002C
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 0149, 002C
 # EFX gain, 10 dB
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 014E, 000A
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2000, 0009
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2001, 081F
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 014E, 000A
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 2000, 0009
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 2001, 081F
 # disable 3Quest CHECK
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 21E5, disable, 15
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 21E5, disable, 15
 
-# Mode 3
+################################
+# Intel PCH Mode 3
+################################
+# SSID, Mode, Key, Value
 # Gain Distribution (Mic volume bar, post gain)
-HP_2023GNA\\SAMSfpa_103C8BF0, 3, 0149, 002C
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 3, 0149, 002C
 # EFX gain, 10 dB
-HP_2023GNA\\SAMSfpa_103C8BF0, 3, 014E, 000A
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 2000, 0009
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 3, 014E, 000A
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 2000, 0009
 # disable FFP
-HP_2023GNA\\SAMSfpa_103C8BF0, 3, 2001, disable, 4
-HP_2023GNA\\SAMSfpa_103C8BF0, 3, 2001, enable, 9
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 3, 2001, disable, 4
 # disable 3Quest CHECK
-HP_2023GNA\\SAMSfpa_103C8BF0, 1, 21E5, disable, 15
+HP_2023GNA\SAMSfppch_103C8B(7A|7B|7D|7E|81|82|84|85|87|8A|8B|8D|8E|F0|F1), 1, 21E5, disable, 15
 
+
+################################
+# Audio codec Mode 1
+################################
+# SSID, Mode, Key, Value
+# Gain Distribution (Mic volume bar, post gain)
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0149, 002C
+# EFX gain, 10 dB
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 014E, 000A
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2000, 0009
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2001, 081F
+# disable 3Quest CHECK
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 21E5, disable, 15
+
+################################
+# Intel PCH Mode 3
+################################
+# SSID, Mode, Key, Value
+# Gain Distribution (Mic volume bar, post gain)
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 0149, 002C
+# EFX gain, 10 dB
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 014E, 000A
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2000, 0009
+# disable FFP
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 2001, disable, 4
+# disable 3Quest CHECK
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 21E5, disable, 15
