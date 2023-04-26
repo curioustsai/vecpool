@@ -9,9 +9,9 @@ A vec pool for keep track of all PCNB vec for all projects
 - Pool of project *.vec files
 ```
 ├───HP
-│   ├───HP2023_CPU
-│   ├───HP2023_GNA
-│   └───HP2024
+│   ├───HP_2023
+│   ├───HP_2023GNA
+│   └───HP_2024
 │       └───reference_930
 └───Lenovo
 ```
@@ -25,3 +25,4 @@ A vec pool for keep track of all PCNB vec for all projects
  - clipboard: extract/merge mode from whole vec file
  - editor: batch process for editing vec file
  - format: sort vec parameters
+ - validator: validate vec files with *.cfgx. Refer to valdiator.cfgx for details.
