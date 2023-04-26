@@ -1,0 +1,65 @@
+# Actions for validate vec file
+# Use '#' to comment out
+# Follow the format as following
+
+# SSID: vec filanem e.g. SAMSfppch_103C873D, or package name: HP_920. Asterisk mark '*' means all vec files.
+# Mode range from 0 ~ 27. Asterisk * stands for all modes
+# Key: hex number
+# Value: hex number
+# SSID, Mode, Key, Value
+# -------------------------------------
+# SAMSfppch_103C873D, *, 1234, 1234
+# HP_920, 1, 1234, 4321
+
+# SSID: vec filanem e.g. SAMSfppch_103C873D, or package name: HP_920. Asterisk mark '*' means all vec files.
+# Mode range from 0 ~ 27. Asterisk * stands for all modes
+# Key: hex number
+# Act: [enable, disable]
+# Bitoffset: 0 ~ 15
+# -------------------------------------
+# SAMSfppch_103C873D, 2, 1234, enable, 7
+# SAMSfppch_103C873D, 2, 1234, disable, 9
+# SAMSfppch_103C873D, *, 4321, enable, 15
+# HP_920GNA, *, 00FE, enable, 12
+# SAMSfpa_*, *, 1234, enable, 12
+# SAMSfppch_**, *, 1234, enable, 12
+# *, *, 4321, set, 15
+
+################################
+# Audio codec Mode 1
+################################
+# SSID, Mode, Key, Value
+# Gain Distribution (Mic volume bar, post gain)
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0149, 002C
+# EFX gain, 10 dB
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 014E, 000A
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2000, 0009
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2001, 081F
+# disable 3Quest CHECK
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 21E5, disable, 15
+
+################################
+# Audio codec Mode 3
+################################
+# SSID, Mode, Key, Value
+# Gain Distribution (Mic volume bar, post gain)
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 0149, 002C
+# EFX gain, 10 dB
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 014E, 000A
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 2000, 0009
+# disable FFP
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 3, 2001, disable, 4
+# disable 3Quest CHECK
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 21E5, disable, 15
+
+################################
+# UI
+################################
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 0
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 1
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 2
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 3
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 4
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 5
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 6
+HP_2023\SAMSfpa_103C8B(51|52|5D|5E|60|61|65|66|67|68|96|97), 1, 0150, enable, 7

@@ -37,17 +37,14 @@ class Validator(VecEditor):
 
                 if key in self.data[mode]:
                     value = self.data[mode][key]
+                    value = (value >> bitoffset) & 1
 
-                    if action.lower() == 'enable':
-                        value = value & (1 << bitoffset)
-                        if (value != 1):
-                            print("Error: [{}] key: {}, bit: {} should be enabled".format(mode, key, bitoffset))
-                            status = False
-                    elif action.lower() == 'disable':
-                        value = value & (1 << bitoffset)
-                        if (value != 0):
-                            print("Error: [{}] key: {}, bit: {} should be disabled".format(mode, key, bitoffset))
-                            status = False
+                    if action.lower() == 'enable' and (value != 1):
+                        print("Error: [{}] key: {}, bit: {} should be enabled".format(mode, key, bitoffset))
+                        status = False
+                    elif action.lower() == 'disable' and (value != 0):
+                        print("Error: [{}] key: {}, bit: {} should be disabled".format(mode, key, bitoffset))
+                        status = False
                 else:
                     print("Error: {} {} doesn't specify".format(mode, key))
                     status = False
