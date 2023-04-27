@@ -1,11 +1,12 @@
-# Introduction
-A vec pool for keep track of all PCNB vec for all projects
+# VecPool
+This repo keep track of vec files and keep everyone on the same pages.
 
-# Usage
-- Use FMSmartVecToDat to convert vec and dat. Vec files are text and dat files are binary. In this repo, we only track vec files.
-- Under the root of working directory, `python Utils\pyvec\format -i <input_vec> -o <output_vec>` to sort your vec file.
+## Project Structure
+- Parameters: keep track of vec files from all projects. Don't keep *.dat file, which is binary. Use `FMSmartVecToDat` to convert.
+- Simulator: the directory where your put simulator
+- Utils: some useful tool for vec format, convert, etc.
 
-## Parmaeter
+## Parameters
 - Pool of project *.vec files
 ```
 ├───HP
@@ -16,13 +17,13 @@ A vec pool for keep track of all PCNB vec for all projects
 └───Lenovo
 ```
 
-## Simulator
-- Vec should match with the simulator. So, keep track of simulator as well. Put simulator on the SharePoint. Point by link.
-
-## Utilities
-- FMSmartVecToDat.exe: Convertor between *.vec and *.dat files
-- pyvec: python utils
- - clipboard: extract/merge mode from whole vec file
- - editor: batch process for editing vec file
- - format: sort vec parameters
- - validator: validate vec files with *.cfgx. Refer to valdiator.cfgx for details.
+## Utils
+* FMSmartVecToDat.exe: Convertor between *.vec and *.dat files
+* pyvec: python utils
+  * clipboard: extract/merge mode from whole vec file
+  * editor: batch editing for vec files. `No more hands on efforts`. Refer to `editor.cfgx` for more details.
+  * format: sort vec parameters.
+  * validator: validate vec files with *.cfgx. Refer to `valdiator.cfgx` for details.
+* drc_curve: draw a drc curve from command line arguments
+* qconvertor: a python script to conver hex, floating number, dB value.
+* FMConvertor: a python script to batch convert d2v/v2d and sort parameters.

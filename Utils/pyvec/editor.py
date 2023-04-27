@@ -210,7 +210,7 @@ if __name__ == "__main__":
     rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
 
     workdir = os.path.join(rootdir, 'Parameters', 'HP')
-    packages = os.listdir(os.path.join(workdir))
+    packages = os.listdir(workdir)
 
     # Not Implement Yet (NIY)
     # if parse_value.customer == "hp":
