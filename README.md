@@ -22,7 +22,7 @@ This repo keep track of vec files and keep everyone on the same pages.
 * pyvec: python utils
   * clipboard: extract/merge mode from whole vec file
   * editor: batch editing for vec files. `No more hands on efforts`. Refer to `editor.cfgx` for more details.
-  * format: sort vec parameters.
+  * format: sort vec parameters. (MPO cases are taken in consideration. Duplicated key will be put at the end of file.)
   * validator: validate vec files with *.cfgx. Refer to `valdiator.cfgx` for details.
 * drc_curve: draw a drc curve from command line arguments
 * qconvertor: a python script to conver hex, floating number, dB value.
