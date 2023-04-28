@@ -20,10 +20,13 @@ class Validator(VecEditor):
             for mode in mode_list:
                 key = act["key"]
                 value = act["value"]
-                if self.data[mode][key] != int(value, 16):
-                    print("Eror: [{}] key: {}, {:X} != {}".format(mode, key, self.data[mode][key], value))
+                if key in self.data[mode]:
+                    if self.data[mode][key] != int(value, 16):
+                        print("Eror: [{}] key: {}, {:X} != {}".format(mode, key, self.data[mode][key], value))
+                        status = False
+                else:
+                    print("Warning: [{}] key: {} doesn't exist. Check its default value".format(mode, key))
                     status = False
-
         elif len(act) == 4:
             if act["mode"] == "*":
                 mode_list = self.data.keys()
@@ -46,7 +49,7 @@ class Validator(VecEditor):
                         print("Error: [{}] key: {}, bit: {} should be disabled".format(mode, key, bitoffset))
                         status = False
                 else:
-                    print("Error: {} {} doesn't specify".format(mode, key))
+                    print("Warning: [{}] key: {} doesn't exist. Check its default value".format(mode, key))
                     status = False
         return status
 

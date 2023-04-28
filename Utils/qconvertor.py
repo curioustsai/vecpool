@@ -28,7 +28,12 @@ if __name__ == "__main__":
 
     elif mode.startswith('f'):
         if mode == "f2h":
-            value = int(round(float(value) * qbase))
+            value = float(value)
+            if value > 0:
+                value = int(round(value * qbase))
+            else:
+                value = int(round(-value * qbase))
+                value = (1 << 16) - 1 - value
             print("{:X}".format(value))
         elif mode == "f2d":
             value = 20 * log10(value)
