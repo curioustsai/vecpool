@@ -1,0 +1,188 @@
+=================20230721update===================
+Device information:	
+HP_600mtc_Redhead 14_5MP_CAM_103C8CB210EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8CB2.DAT(3018)	
+//Add_SAMSfaspk_103C8CB2.DAT(3004)	
+//Add_RTMICAR_103C8CB2.DAT(0029)	
+	
+
+Device information:
+HP_600mtc_Redhead 14_HD/Non_CAM_103C8CB310EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8CB3.DAT(3017)	
+//Add_SAMSfaspk_103C8CB3.DAT(3004)	
+//Add_RTMICAR_103C8CB3.DAT(0044)	
+	
+Device information:		
+HP_MWS_Owls_5MP_CAM_103C8C9710EC0236_2chK_Mic_DmicTo HDA_HD audio		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8C97.DAT(3016)		
+//Add_SAMSfaspk_103C8C97.DAT(3004)		
+//Add_RTMICAR_103C8C97.DAT(0029)		
+
+Device information:		
+HP_MWS_Owls_HD/Non_CAM_103C8C9610EC0236_2chK_Mic_DmicTo HDA_HD audio		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8C96.DAT(3015)		
+//Add_SAMSfaspk_103C8C96.DAT(3004)		
+//Add_RTMICAR_103C8C96.DAT(0044)		
+		
+HP_MWS_Longhorns_5MP_CAM_103C8CA210EC0236_2chK_Mic_DmicTo Intel audio		
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8CA0103C&REV_0001		
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8CA0103C&REV_0001		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8CA2.DAT(3014)		
+//Add_SAMSfppch_103C8CA2.DAT(3014)		
+//Add_SAMSfaspk_103C8CA2.DAT(3005)		
+//Add_RTMICAR_103C8CA2.DAT(0029)		
+		
+HP_MWS_Longhorns_HD/Non_CAM_103C8CA110EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8CA0103C&REV_0001	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8CA0103C&REV_0001	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8CA1.DAT(3013)	
+//Add_SAMSfppch_103C8CA1.DAT(3013)	
+//Add_SAMSfaspk_103C8CA1.DAT(3005)	
+//Add_RTMICAR_103C8CA1.DAT(0044)	
+
+HP_605_Roz 16_5MP_CAM_103C8C8110EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C81.DAT(3012)	
+//Add_SAMSfaspk_103C8C81.DAT(3004)	
+//Add_RTMICAR_103C8C81.DAT(0029)	
+	
+HP_605_Roz 16_HD/Non_CAM_103C8C8210EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C82.DAT(3011)	
+//Add_SAMSfaspk_103C8C82.DAT(3004)	
+//Add_RTMICAR_103C8C82.DAT(0044)
+	
+HP_605_Roz 14_5MP_CAM_103C8C7F10EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C7F.DAT(3010)	
+//Add_SAMSfaspk_103C8C7F.DAT(3004)	
+//Add_RTMICAR_103C8C7F.DAT(0029)	
+	
+HP_605_Roz 14_HD/Non_CAM_103C8C8010EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C80.DAT(300F)	
+//Add_SAMSfaspk_103C8C80.DAT(3004)	
+//Add_RTMICAR_103C8C80.DAT(0044)	
+	
+HP_600_Rex 16_5MP_CAM_103C8C9110EC0236_2chK_Mic_DmicTo Intel audio		
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C87103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C87103C&REV_0001		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8C91.DAT(300E)		
+//Add_SAMSfppch_103C8C91.DAT(300E)		
+//Add_SAMSfaspk_103C8C91.DAT(3005)		
+//Add_RTMICAR_103C8C91.DAT(0029)		
+		
+HP_600_Rex 16_HD/Non_CAM_103C8C8C10EC0236_2chK_Mic_DmicTo Intel audio		
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C87103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C87103C&REV_0001		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8C8C.DAT(300D)		
+//Add_SAMSfppch_103C8C8C.DAT(300D)		
+//Add_SAMSfaspk_103C8C8C.DAT(3005)		
+//Add_RTMICAR_103C8C8C.DAT(0044)		
+		
+HP_600_Rex 14_5MP_CAM_103C8C9010EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C86103C&REV_0001	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C86103C&REV_0001
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C90.DAT(300C)	
+//Add_SAMSfppch_103C8C90.DAT(300C)	
+//Add_SAMSfaspk_103C8C90.DAT(3005)	
+//Add_RTMICAR_103C8C90.DAT(0029)
+	
+HP_600_Rex  14_HD/Non_CAM_103C8C8B10EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C86103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C86103C&REV_0001	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C8B.DAT(300B)	
+//Add_SAMSfppch_103C8C8B.DAT(300B)	
+//Add_SAMSfaspk_103C8C8B.DAT(3005)	
+//Add_RTMICAR_103C8C8B.DAT(0044)	
+	
+HP_600_Rex 13_5MP_CAM_103C8C8F10EC0236_2chK_Mic_DmicTo Intel audio		
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C85103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C85103C&REV_0001		
+----------------------------------------------------------------------------------------------------		
+//Add_SAMSfpa_103C8C8F.DAT(300A)		
+//Add_SAMSfppch_103C8C8F.DAT(300A)		
+//Add_SAMSfaspk_103C8C8F.DAT(3005)		
+//Add_RTMICAR_103C8C8F.DAT(0029)		
+		
+HP_600_Rex 13_HD/Non_CAM_103C8C8A10EC0236_2chK_Mic_DmicTo Intel audio			
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C85103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C85103C&REV_0001			
+----------------------------------------------------------------------------------------------------			
+//Add_SAMSfpa_103C8C8A.DAT(3009)			
+//Add_SAMSfppch_103C8C8A.DAT(3009)			
+//Add_SAMSfaspk_103C8C8A.DAT(3005)			
+//Add_RTMICAR_103C8C8A.DAT(0044)			
+			
+HP_405_Oaken 16_5MP_CAM_103C8C7D10EC0236_2chK_Mic_DmicTo HDA_HD audio			
+----------------------------------------------------------------------------------------------------			
+//Add_SAMSfpa_103C8C7D.DAT(3008)			
+//Add_SAMSfaspk_103C8C7D.DAT(3004)			
+//Add_RTMICAR_103C8C7D.DAT(0029)			
+			
+HP_405_Oaken 16_HD/Non_CAM_103C8C7E10EC0236_2chK_Mic_DmicTo HDA_HD audio			
+----------------------------------------------------------------------------------------------------			
+//Add_SAMSfpa_103C8C7E.DAT(3007)			
+//Add_SAMSfaspk_103C8C7E.DAT(3004)			
+//Add_RTMICAR_103C8C7E.DAT(0044)			
+			
+HP_405_Oaken 14_5MP_CAM_103C8C7B10EC0236_2chK_Mic_DmicTo HDA_HD audio			
+----------------------------------------------------------------------------------------------------			
+//Add_SAMSfpa_103C8C7B.DAT(3006)			
+//Add_SAMSfaspk_103C8C7B.DAT(3004)			
+//Add_RTMICAR_103C8C7B.DAT(0029)			
+			
+HP_405_Oaken 14_HD/Non_CAM_103C8C7C10EC0236_2chK_Mic_DmicTo HDA_HD audio	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C7C.DAT(3005)	
+//Add_SAMSfaspk_103C8C7C.DAT(3004)	
+//Add_RTMICAR_103C8C7C.DAT(0044)
+	
+HP_400_Olaf 15_5MP_CAM_103C8C8E10EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C84103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C84103C&REV_0001	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C8E.DAT(3004)	
+//Add_SAMSfppch_103C8C8E.DAT(3004)	
+//Add_SAMSfaspk_103C8C8E.DAT(3005)	
+//Add_RTMICAR_103C8C8E.DAT(0029)
+	
+HP_400_Olaf 15_HD/Non_CAM_103C8C8910EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C84103C&REV_0001	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C84103C&REV_0001
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C89.DAT(3003)	
+//Add_SAMSfppch_103C8C89.DAT(3003)	
+//Add_SAMSfaspk_103C8C89.DAT(3005)	
+//Add_RTMICAR_103C8C89.DAT(0044)	
+	
+HP_400_Olaf 14_5MP_CAM_103C8C8D10EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C83103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C83103C&REV_0001	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C8D.DAT(3002)	
+//Add_SAMSfppch_103C8C8D.DAT(3002)	
+//Add_SAMSfaspk_103C8C8D.DAT(3005)	
+//Add_RTMICAR_103C8C8D.DAT(0029)	
+	
+HP_400_Olaf 14_HD/Non_CAM_103C8C8810EC0236_2chK_Mic_DmicTo Intel audio	
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_00&VEN_8086&DEV_AE20&SUBSYS_8C83103C&REV_0001
+INTELAUDIO\CTLR_DEV_72E8&LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_8C83103C&REV_0001	
+----------------------------------------------------------------------------------------------------	
+//Add_SAMSfpa_103C8C88.DAT(3001)	
+//Add_SAMSfppch_103C8C88.DAT(3001)	
+//Add_SAMSfaspk_103C8C88.DAT(3005)	
+//Add_RTMICAR_103C8C88.DAT(0044)	
+	
+
+	
