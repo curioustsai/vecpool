@@ -1,9 +1,11 @@
 # HP projects
-- Conference Mode (0x1)
-- Personal Mode (0x3)
-- Conference Mode with VDNA (0x0A)
-- Personal Mode with VDNA (0x0D)
-- Enroll Mode (0xE)
+- Earphone (Mode 0)
+- Conference Mode (Mode 1)
+- Personal Mode (Mode 3)
+- Conference Mode with VDNA (Mode 10)
+- Personal Mode with VDNA (Mode 13)
+- Enroll Mode (Mode 14)
+- Cortana (Mode 19)
 
 ## GNA/CPU dll switch
 Uplink:
