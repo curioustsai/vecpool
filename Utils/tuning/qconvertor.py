@@ -2,7 +2,7 @@ import argparse
 from numpy import log10, power
 
 
-if __name__ == "__main__":
+def main():
     description = "Convert among hex, float value, db value based on Qformat\n"
     argpars = argparse.ArgumentParser(description=description, formatter_class=argparse.RawDescriptionHelpFormatter)
     argpars.add_argument("--value", "-v", required=True, default="", type=str)
@@ -46,3 +46,7 @@ if __name__ == "__main__":
         elif mode == "d2h":
             hex_value = int(round(value * qbase))
             print("{:X}".format(hex_value))
+
+
+if __name__ == "__main__":
+    main()

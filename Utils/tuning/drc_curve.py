@@ -95,7 +95,7 @@ def plot_figure(threshold1=-24.0, slop1=0.1, threshold2=-12.0, slop2=0.2):
     plt.show()
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Dynamic Range Compressor Curve")
     parser.add_argument("--threshold1", type=float, default=-24.0)
     parser.add_argument("--slop1", type=float, default=0.1)
@@ -109,3 +109,7 @@ if __name__ == "__main__":
     slop2 = args.slop2
 
     plot_figure(threshold1, slop1, threshold2, slop2)
+
+
+if __name__ == "__main__":
+    main()

@@ -92,7 +92,7 @@ class VecFormat:
         output_file.close()
 
 
-if __name__ == "__main__":
+def main():
     description = "VecFormat {}, sorting the vec file".format(version)
     argpars = argparse.ArgumentParser(description=description)
     argpars.add_argument("--input", "-i", default="", type=str)
@@ -110,3 +110,7 @@ if __name__ == "__main__":
     formatter.read(input_path)
     formatter.sort()
     formatter.write(output_path)
+
+
+if __name__ == "__main__":
+    main()

@@ -44,7 +44,7 @@ class VecClipBoard(VecFormat):
         org_format.write(output)
 
 
-if __name__ == "__main__":
+def main():
     usage_extract = "Extract Mode: specify input vec, mode, output vec to extract param."
     usage_merge = "Merge Mode: specify input vec, param vec, output. Paste param vec onto input vec as output vec."
     description = "VecClipBoard {}.\n\n{}\n{}".format(version, usage_extract, usage_merge)
@@ -65,3 +65,7 @@ if __name__ == "__main__":
         clipboard.merge(args.input, args.param, args.output)
     else:
         clipboard.extract(args.input, args.mode, args.output)
+
+
+if __name__ == "__main__":
+    main()

@@ -15,10 +15,14 @@ def generate_sine(fs=48000, duration=5, fc=1000, amplitude=0.5):
     return buf
 
 
-if __name__ == "__main__":
+def main():
     fs = 32000
     amps = np.arange(-60, 0, 3)
     amps = [dB2lin(amp) for amp in amps]
     bufs = [generate_sine(fs=fs, amplitude=amp) for amp in amps]
     buf = np.concatenate(bufs)
     sf.write("amp.wav", buf, fs, subtype='PCM_32')
+
+
+if __name__ == "__main__":
+    main()

@@ -1,4 +1,4 @@
-from editor import VecEditor
+from .editor import VecEditor
 import os
 import argparse
 
@@ -64,7 +64,7 @@ class Validator(VecEditor):
             self.apply_cfgx(self.config, False)
 
 
-if __name__ == "__main__":
+def main():
     description = "Validatoer {}".format(version)
     argpars = argparse.ArgumentParser(description=description)
     argpars.add_argument("--input", "-i", default="", type=str)
@@ -90,3 +90,7 @@ if __name__ == "__main__":
 
     validator = Validator(workdir, packages, input, output, config)
     validator.run()
+
+
+if __name__ == "__main__":
+    main()

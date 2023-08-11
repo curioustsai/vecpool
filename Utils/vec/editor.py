@@ -1,4 +1,4 @@
-from format import VecFormat
+from .format import VecFormat
 import os
 import argparse
 from glob import glob
@@ -192,7 +192,7 @@ class VecEditor(VecFormat):
                     self.write(vec_file)
 
 
-if __name__ == "__main__":
+def main():
     description = "VecEditor {}".format(version)
     argpars = argparse.ArgumentParser(description=description)
     argpars.add_argument("--input", "-i", default="", type=str)
@@ -219,3 +219,7 @@ if __name__ == "__main__":
 
     editor = VecEditor(workdir, packages, input, output, config)
     editor.run()
+
+
+if __name__ == "__main__":
+    main()
