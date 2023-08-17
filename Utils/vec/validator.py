@@ -1,6 +1,7 @@
 from .editor import VecEditor
 import os
 import argparse
+import pathlib
 
 version = "1.0.0"
 
@@ -69,6 +70,7 @@ def main():
     argpars = argparse.ArgumentParser(description=description)
     argpars.add_argument("--input", "-i", default="", type=str)
     argpars.add_argument("--output", "-o", default="", type=str)
+    argpars.add_argument("--workdir", "-wd", default=os.getcwd(), type=pathlib.Path)
     argpars.add_argument("--config", "-c", required=True, help="*.cfg or *.cfgx")
     argpars.add_argument("--customer", default="hp", choices=['hp', 'lenovo'],
                          help="vec root directory of your project")
@@ -78,10 +80,9 @@ def main():
     output = parse_value.output
     config = parse_value.config
     customer = parse_value.customer
+    workdir = parse_value.workdir
     # Customer except HP are NIY
-    rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
-    workdir = os.path.join(rootdir, 'Parameters', 'HP')
-    packages = os.listdir(os.path.join(workdir))
+    packages = os.listdir(workdir)
 
     # Not Implement Yet (NIY)
     # if parse_value.customer == "hp":

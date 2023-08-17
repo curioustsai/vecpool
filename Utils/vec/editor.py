@@ -1,6 +1,7 @@
 from .format import VecFormat
 import os
 import argparse
+import pathlib
 from glob import glob
 
 version = "1.0.0"
@@ -198,6 +199,7 @@ def main():
     argpars.add_argument("--input", "-i", default="", type=str)
     argpars.add_argument("--output", "-o", default="", type=str)
     argpars.add_argument("--config", "-c", required=True, help="*.cfg or *.cfgx")
+    argpars.add_argument("--workdir", "-wd", default=os.getcwd(), type=pathlib.Path)
     argpars.add_argument("--customer", default="hp", choices=['hp', 'lenovo'],
                          help="vec root directory of your project")
     parse_value = argpars.parse_args()
@@ -207,9 +209,7 @@ def main():
     config = parse_value.config
     customer = parse_value.customer
     # Customer except HP are NIY
-    rootdir = os.path.join(os.path.dirname(__file__), '..', '..')
-
-    workdir = os.path.join(rootdir, 'Parameters', 'HP')
+    workdir = parse_value.workdir
     packages = os.listdir(workdir)
 
     # Not Implement Yet (NIY)
