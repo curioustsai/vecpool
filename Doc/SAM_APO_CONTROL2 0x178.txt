@@ -1,0 +1,25 @@
+#define SAM_APO_CONTROL2 0x178
+//DESCBEGIN
+  // bit 0: 0: Disable RTK VOIP Key, 1: Enable RTK VOIP Key (Default)
+  // bit 1: 1: Disable FM VOIP Key, 1: Enable FM VOIP Key (Default)
+  // bit 2: 0: Do SAMSoft analysis and output bypass signal, 1: Run SAMSoft (default)
+  // bit 3: reserved
+  // bit 4: 0: APO NN feature isn't controlled by NN UI, 1 (Default): APO NN feature is controlled by NN UI. The control bit is for HP only.
+  // bit 5: 0: APO SafeClear feature isn't controlled by SafeClear UI, 1 (Deafult): APO SafeClear feature is controlled by SafeClear UI.
+  // bit 6: 0: APO Howling Suppression feature isn't controlled by Howling Suppression UI, 1 (Deafult): APO Howling Suppression feature is controlled by Howling Suppression UI.
+  // bit 7: 0: APO BVE feature isn't controlled by BVE UI, 1 (Deafult): APO BVE feature is controlled by BVE UI.
+  // bit 8: 0: Disable NN function, 1 (Default): Keep NN state when over 2 instances & running default mode.
+  // bit 9: 0: Disable NN function, 1 (Default): Keep NN state when over 2 instances & running speech mode.
+  // bit 10: 0: Disable NN function, 1 (Default): Keep NN state when over 2 instances & running communication mode.
+  // bit 11: 0: Disable NN function, 1 (Default): Keep NN state when over 2 instances & running raw mode.	
+//DESCEND 
+
+#define SAM_APO_CONTROL3 0x179
+//DESCBEGIN
+  // bit 0: 0 (Default): Bypass SAMSoft, 1: Reduce NS level when NS is off in UI setting (for K7 bit 2).
+  // bit 1: 0 (Default): Legacy SAMSOFT memory configuration, 1: Optimization SAMSoft memory configuration.	
+  // bit 2: 0 (Default): Enable FENS by VOIP key, 1: Enable FENS by K7 bit 2. The feature is for Lenovo New UI setting from 20220829  
+  // bit 4: 0 (Default): APO NN feature isn't controlled by NN UI, 1: APO NN feature is controlled by NN UI. The control bit is for non-HP customers.
+  // bit 5: 0 (Default): Legacy load-dat with current codec vid, sid, 1: new load-dat with realtek codec vid, sid (dat vid, sid)
+  // bit 6: 0 (Default): Raw mode procesing isn't controlled by Raw-mode UI, 1: Raw mode procesing is controlled by Raw-mode UI.
+//DESCEND 

@@ -1,0 +1,21 @@
+//0x156
+#define UI3_FM_type_UI_FUNC_ADDR          0x156
+
+#define FM_type_UI_internal_mic_raw_mode_visible 		(0x1)
+#define FM_type_UI_internal_mic_stereo_recording_visible 	(0x2)
+#define FM_type_UI_internal_mic_AI_mode_visible 		(0x4)
+#define FM_type_UI_internal_mic_AI_level_visible 		(0x8)
+
+#define FM_type_UI_internal_mic_safeclear_visible 		(0x10)
+#define FM_type_UI_internal_mic_howling_suppression_visible (0x20)
+#define FM_type_UI_external_mic_raw_mode_visible 		(0x40)
+#define FM_type_UI_external_mic_AI_mode_visible 		(0x80)
+
+#define FM_type_UI_external_mic_AI_level_visible 		(0x100)
+#define FM_type_UI_external_mic_safeclear_visible 		(0x200)
+#define FM_type_UI_external_mic_howling_suppression_visible (0x400)
+
+#define FM_type_UI_internal_mic_VDNA_visible 			(0x800)
+#define FM_type_UI_external_mic_VDNA_visible 			(0x1000)
+
+#define FM_HDMic_page_enable						(0x2000)

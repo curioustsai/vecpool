@@ -1,0 +1,17 @@
+mode 1
+150 bit 7   0x80   UI ext-mic ns available, The control bit is for HP only.
+153 bit 10  0x400  UI ext-mic nn available
+
+mode 0
+153 bit 10  0x400  ext-mic nn support (APO)
+
+mode 0 
+178
+// bit 4 (0x10) : 
+0: APO NN feature isn't controlled by NN UI, 
+1 (Default): APO NN feature is controlled by NN UI. The control bit is for HP only.
+
+179 
+// bit 4 (0x10):
+0 (Default): APO NN feature isn't controlled by NN UI, 
+1: APO NN feature is controlled by NN UI.  The control bit is for non-HP customers.

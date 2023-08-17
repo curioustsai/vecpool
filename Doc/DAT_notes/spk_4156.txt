@@ -1,0 +1,8 @@
+#define UI3_spk_FM_type_UI_FUNC_ADDR 0x4156
+#define FMUI3_internal_spk_AI_mode_visible		0x0001   	//low word for mic mode1 0x156 : 0x0001XXXX
+#define FMUI3_internal_spk_AI_level_visible		0x0002
+#define FMUI3_internal_spk_BVE_visible			0x0004
+#define FMUI3_external_spk_AI_mode_visible		0x0008
+
+#define FMUI3_external_spk_AI_level_visible		0x0010
+#define FMUI3_external_spk_BVE_visible			0x0020

@@ -1,0 +1,30 @@
+@Szu-Min Chen,update inf init value
+for avoid of registry create trouble at FMService, please add 2 new key K901 and restore at cap/ren in INF key creation: 
+    {2B24BE42-A892-11DC-8314-0800200C9A66},901 //inf default 0x80000000 (bit 31) so FMService will set new initial value for customer if need,
+    {BE73ED5B-FC1C-4875-AC4F-833FFF79CDAA},901 //restore default for {2B24BE42-A892-11DC-8314-0800200C9A66},901 
+
+
+NN level 0 (Off)			0x40 (bit 6)
+NN level 1 (small)		0x01 (bit 0)
+NN level 2				0x02 (bit 1)
+NN level 3				0x04 (bit 2)
+NN level 4				0x08 (bit 3)
+NN level 5(strong, default)	0x10 (bit 4) (FMService default)
+AI_mode_Off				0x80 (bit 7)
+
+
+SafeClear enabled
+(bit 8 of 0x21E5)		0x20 (bit 5)
+
+RawMode enabled		0x100 (bit 8)
+
+BVE enabled			0x200 (bit 9)
+
+enable VDNA			0x200 (bit 9)
+
+VDNA level 0 (off) 0x400
+VDNA level 1  0x800 (registry default)
+VDNA level 2  0x1000
+VDNA level 3  0x2000
+VDNA level 4  0x4000
+VDNA level 5  0x8000

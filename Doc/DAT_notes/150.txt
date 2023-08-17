@@ -1,0 +1,31 @@
+////#define APO_FUNC_ADDR          		0x150
+//#define EXTMIC_ADDIN_K2		   	0x151
+//#define EXTMIC_ADDIN_K7	       	0x152
+//#define SVC_INTER_FUNC_ADDR    		0x153	//NEW VR, LID On/Off
+//#define LID_ON_VOL_LV_ADDR     		0x154
+//#define LID_OFF_VOL_LV_ADDR    		0x155
+//#define LID_OFF_MODE_SWITCH_MODE  	0x18c
+//#define APO_SAMSOFT_VER          		0xFE
+//#define APO_SAMSOFT_SPK_VER          	0x40FE
+
+
+//150
+//	BF,
+//	AEC,
+//	NS,
+//	FFP,
+
+//	KSS,
+//	VR,
+//	BYPASS,
+//	EXTERNAL_MIC_NS,							//0x0080
+	///8
+//	FMV,									//0x0100
+//	BF_ORIENTATION,							//0x0200
+//	NLD,									//0x0400
+//	HWDT_Visible_also_ON_OFF,					//0x0800
+
+//	UI_ONLY_PRV_CONF,							//0x1000	//lenovo use
+//	BF_ORIENTATION_HP_AUTO_SWITCH,				//0x2000	//hp use
+//	BF_RESTORE_AEC_FFP_VR_KSS_BYPASS_FROM_LANDSCAPE,	//0x4000	//lenovo use
+//	FORCE_NOT_CHECK_RTK_INT_MIC_IN_EXTERNAL_MIC_NS,   	//APO use

@@ -1,0 +1,5 @@
+SPKNS = 16,//INT_SPKNS_SUPPORT = 0,				//0x0001   //low word for mic mode1 0x150 : 0x0001XXXX
+EXT_SPKNS_SUPPORT = 1,						//0x0002
+force_spk_ai_icon_not_visible = 2,				//0x0004
+
+
